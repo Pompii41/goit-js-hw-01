@@ -1,18 +1,12 @@
 "use strict";
-
-let cost;
 const country = prompt(`В какую страну доставить товар?`);
-
 if (country === null) {
-  alert("Отменено пользователем");
+  console.log("Отменено пользователем!");
 } else {
-  cost = country.toLowerCase();
-  сostNext(cost);
-}
-function сostNext(deliveryCountry) {
-  let summary = deliveryCountry[0].toUpperCase() + deliveryCountry.slice(1);
-  switch (deliveryCountry) {
+  let summary = country[0].toUpperCase() + country.slice(1);
+  switch (country.toLowerCase()) {
     case `китай`:
+      country.toUpperCase();
       console.log(`Доставка в ${summary} будет стоить 100 кредитов`);
       break;
     case `чили`:

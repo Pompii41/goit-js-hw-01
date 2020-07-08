@@ -9,6 +9,8 @@ do {
   if (input === null) {
     console.log("Отменено пользователем!");
     break;
+  } else {
+    ("");
   }
 
   input = Number(input);
@@ -17,8 +19,9 @@ do {
   if (nameNaN) {
     alert("Ошибка ввода!!!Вводите числа! ");
     continue;
+  } else {
+    ("");
   }
-
   total += input;
 } while (input !== null);
 
