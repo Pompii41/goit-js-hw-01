@@ -1,16 +1,12 @@
 "use strict";
 
 let total = 0;
-let input;
-
 do {
   let input = prompt("Вводите числа пока не надоест");
 
   if (input === null) {
     console.log("Отменено пользователем!");
     break;
-  } else {
-    ("");
   }
 
   input = Number(input);
@@ -19,8 +15,6 @@ do {
   if (nameNaN) {
     alert("Ошибка ввода!!!Вводите числа! ");
     continue;
-  } else {
-    ("");
   }
   total += input;
 } while (input !== null);
